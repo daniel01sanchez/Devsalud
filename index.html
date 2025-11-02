@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamiento de Citas Médicas - DevSalud</title>
+    <link href="./estilo/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilo/miestilo.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="top-bar text-end px-3 py-1">
+        <span>LENGUA DE SEÑAS | </span>
+        <span>ESPAÑOL ▾</span>
+    </div>
+
+    <!-- Encabezado -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="./img/devsalud.png" alt="Logo" width="150" class="me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Afiliados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Empleadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proveedores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Campañas de Salud</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ruta -->
+    <div class="breadcrumb-bar py-2 px-4">
+        <small>Plan de Agendamientos de Salud > Agendamiento de Citas</small>
+    </div>
+
+    <!-- Sección principal -->
+    <section class="container text-center my-5">
+        <div class="mb-4">
+            <a href="#" class="btn btn-lime fw-semibold">¿Cómo Afiliarme?</a>
+        </div>
+        <h2 class="fw-bold text-primary mb-4">Agendamiento de Citas Médicas DevSalud</h2>
+        
+        <h4 class="text-primary mb-4">Agenda tu cita DevSalud</h4>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm rounded-3">
+                    <h5 class="fw-bold text-primary">Afiliado</h5>
+                    <p>Si eres afiliado a nuestro plan de salud, acá puedes solicitar tus citas.</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Ingresar</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 shadow-sm rounded-3">
+                    <h5 class="fw-bold text-primary">No afiliado</h5>
+                    <p>Si no eres afiliado, aquí puedes encontrar cómo reservar tus citas.</p>
+                    <a href="#" class="btn btn-outline-primary w-100">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3">
+        <div class="container text-center">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div>
+                    <img src="./img/gov.png" alt="GOV" height="35">
+                </div>
+                <div>
+                    <small>&copy; Todos los derechos reservados DevSalud</small>
+                </div>
+                <div>
+                    <small>Vigilado Supersalud</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

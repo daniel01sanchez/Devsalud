@@ -1,0 +1,40 @@
+/* Barra superior */
+.top-bar {
+    background-color: #6c6c6c;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-bar {
+    background-color: #bdbdbd;
+    color: white;
+}
+
+/* Botón verde */
+.btn-lime {
+    background-color: #ccff33;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.btn-lime:hover {
+    background-color: #b7f000;
+}
+
+/* Texto principal */
+.text-primary {
+    color: #003366 !important;
+}
+
+/* Footer */
+.footer {
+    background-color: #004aad;
+    color: white;
+}
+
+.footer small {
+    color: white;
+}
