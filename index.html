@@ -54,7 +54,9 @@
     <!-- Sección principal -->
     <section class="container text-center my-5">
         <div class="mb-4">
-            <a href="#" class="btn btn-lime fw-semibold">¿Cómo Afiliarme?</a>
+            <button class="btn btn-lime fw-semibold" data-bs-toggle="modal" data-bs-target="#modalAfiliarme">
+            ¿Cómo Afiliarme?
+            </button>
         </div>
         <h2 class="fw-bold text-primary mb-4">Agendamiento de Citas Médicas DevSalud</h2>
         
@@ -123,6 +125,106 @@
         }
     });
     </script>
+    <!-- Modal ¿Cómo Afiliarme? -->
+    <div class="modal fade" id="modalAfiliarme" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-primary">¿Cómo afiliarme a DevSalud?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Para afiliarte a DevSalud debes seguir estos pasos:</p>
+                    <ul>
+                        <li>1. Diligenciar tu información básica.</li>
+                        <li>2. Subir documentos obligatorios.</li>
+                        <li>3. Confirmar tu identidad.</li>
+                        <li>4. Esperar aprobación del sistema.</li>
+                    </ul>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-primary"
+                                data-bs-target="#modalCrearCuenta"
+                                data-bs-toggle="modal"
+                                data-bs-dismiss="modal">
+                            Crear cuenta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal Crear Cuenta -->
+    <div class="modal fade" id="modalCrearCuenta" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-primary">Registro de Paciente - DevSalud</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="formRegistro" enctype="multipart/form-data">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label">Tipo de identificación</label>
+                                <select class="form-select" required>
+                                    <option value="">Seleccionar</option>
+                                    <option>CC</option>
+                                    <option>TI</option>
+                                    <option>CE</option>
+                                    <option>PP</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label">Número de identificación</label>
+                                <input type="number" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Fecha de nacimiento</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Teléfono</label>
+                                <input type="number" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Dirección de residencia</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <label class="form-label fw-semibold">Subir documentos (cédula, certificado, etc.)</label>
+                                <input type="file" class="form-control" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+                            </div>
+
+                        </div>
+
+                        <div class="text-end mt-4">
+                            <button type="submit" class="btn btn-primary px-4">Registrar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
