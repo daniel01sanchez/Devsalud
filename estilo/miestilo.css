@@ -38,3 +38,9 @@
 .footer small {
     color: white;
 }
+
+/* Botón consultar hora → 100px desde la izquierda */
+#btnHora {
+    margin-left: 50px;
+    margin-bottom: 45px;
+}

@@ -40,6 +40,17 @@
         <small>Plan de Agendamientos de Salud > Agendamiento de Citas</small>
     </div>
 
+
+    <!-- Botón consultar hora -->
+    <div class="mt-5">
+        <button id="btnHora" class="btn btn-primary">
+            Consultar hora actual para agendar
+        </button>
+
+        <div id="resultadoHora" class="mt-3"></div>
+    </div>
+
+
     <!-- Sección principal -->
     <section class="container text-center my-5">
         <div class="mb-4">
@@ -85,5 +96,33 @@
     </footer>
 
     <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Script para hora -->
+    <script>
+    document.getElementById("btnHora").addEventListener("click", function() {
+
+        try {
+            let ahora = new Date();
+
+            let fecha = ahora.toLocaleDateString('es-CO');
+            let hora = ahora.toLocaleTimeString('es-CO');
+
+            document.getElementById("resultadoHora").innerHTML = `
+                <div class="alert alert-info">
+                    <strong>Fecha actual:</strong> ${fecha} <br>
+                    <strong>Hora actual:</strong> ${hora}
+                </div>
+            `;
+
+        } catch (error) {
+            document.getElementById("resultadoHora").innerHTML = `
+                <div class="alert alert-danger">
+                    Error obteniendo la hora.
+                </div>
+            `;
+        }
+    });
+    </script>
+
 </body>
 </html>
